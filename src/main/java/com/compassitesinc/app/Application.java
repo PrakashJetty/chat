@@ -1,0 +1,22 @@
+package com.compassitesinc.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+//import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+/**
+ * Created by prakashjetty on 1/15/18.
+ */
+@SpringBootApplication
+@ComponentScan(basePackages = "com.compassitesinc")
+@EnableAutoConfiguration
+
+public class Application {
+
+    public static void main(String[] args) {
+
+        SpringApplication.run(Application.class, args);
+    }
+}
